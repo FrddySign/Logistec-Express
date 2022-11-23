@@ -1,0 +1,595 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    position: relative;
+    min-height: 100%;
+}
+
+body{
+    bottom: 0;
+    padding-bottom: 1em;
+    min-height: calc(100vh - (70px + 290));
+}
+
+@font-face{
+    font-family: "Oswald";
+    src: url(../assets/font/Oswald-VariableFont_wght.ttf);
+}
+
+header{
+    width: 100%;
+    background-color: #1A374D;
+    height: 70px; 
+}
+
+                            /*  Cabecera*/
+
+.ancho{
+    width: 100%;
+    height: 70px;
+    background-color:#406882 ;
+    margin-left: 10px;
+    display: flex;
+}
+
+.logo{
+    width: 20%;
+    height: 70px;
+    background-color: #1A374D;
+    float: left;
+    padding-top: 13px;
+    box-sizing: border-box;
+    list-style-type: none;
+    display: flex;
+}
+
+.logo p a{
+    color: #fff;
+    font-size: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: "Oswald";
+    padding-left: 5px;
+    
+}
+
+.logo p a:hover{
+    color: black;
+}
+
+                            /*Menu*/
+
+nav{
+    width: 70%;
+    height: 70px;
+    background-color: #406882;
+    float: left;
+    padding-top: 15px;
+    box-sizing: border-box;
+}
+
+nav{
+    text-align: center;
+    display: flex;
+}
+
+
+.menu{
+    background-color: #406882;
+    list-style-type: none;
+    padding: 0;
+    width: 90%;
+    margin: auto;
+    list-style: none;
+    display: flex;
+    margin-left: 250px;
+}
+
+.menu .item{
+    display: inline-block;
+    position: relative;
+    font-size: 20px;
+    text-align: center;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.menu .Submenu{
+    position: absolute;
+    display: none;
+    list-style: none;
+    
+}
+
+.menu .Submenu .sub_i{
+    display: block;
+    font-size: 0.8rem;
+    padding: auto;
+}
+
+.menu .Submenu .sub_i{
+    display: block;
+    font-size: 0.8rem;
+    padding: auto;
+}
+
+.menu .item a{
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+}
+
+.menu .item a:hover{
+    color: rgb(10, 10, 10);
+}
+
+.menu .item:hover .Submenu{
+    display: block;
+}
+
+.menu .item:hover a{
+    background-color: lightgrey;
+    color: rgb(5, 4, 4);
+}
+
+.menu .item a{
+    font-family: "Oswald";
+}
+
+                          /*Imagen de fondo, boton*/
+
+.conten{
+    background-image: url(../img/inicio3.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    width: auto;
+}
+
+section h1{
+    color: white;
+    text-decoration: none;
+    font-family: 'Oswald';
+    font-size: 44px;
+    padding: 2em;
+}
+
+h1:hover{
+    transition: .2s ease all;
+    color: #000000;
+    cursor:pointer;
+    
+}
+
+section{
+    min-width: 1000px;
+    margin: auto;
+    padding: 30px 0;
+    font-family: 'Oswald';
+}
+
+.boton{
+    height: 60px;
+    width: 200px;
+    border-radius: 5%;
+    background-color: #6998AB;
+    cursor: pointer;
+    font-weight: 500;
+    text-transform: uppercase;
+    border: none;
+    transition: .3s ease all;
+    padding: 10px;
+}
+
+.boton:hover{
+    background: #000000;
+}
+
+.boton a{
+    text-decoration: none;
+    font-family: 'Oswald';
+    font-size: 20px;
+    color: white;
+}
+
+.boton a span{
+    color: white;
+}
+
+.efecto:hover{
+    transform: scale(1.2,1.2);
+    transition: 0.5s;
+}
+
+                          /*Seccion*/
+
+.hr{
+    border: none;
+    height: 1px;
+    margin: 30px;
+    padding: 80;
+    text-align: center;
+    background-color: #000000;
+}
+  
+.row,
+.col-sm-3,
+.card,
+.card-body img{
+    cursor: pointer;
+    flex: stretch;
+} 
+
+.contenidocard .subcontenidocard{
+    background-color: #B1D0E0;
+}
+
+.contenidocard h2{
+    text-align: center;
+    padding-top: 10px;
+    font-family: 'Oswald';
+}
+
+
+.contenedorcontacto{
+    text-align: center;
+    padding-top: 10px;
+    font-family: 'Oswald';
+}
+
+.contenedorcontacto .mapouter{
+    height: 500px;
+    display: flex;
+    margin-left: 70px;
+    padding-top: 10px;
+    margin-right: 0px;
+    margin-bottom: 20px;
+}
+
+.parrafo{
+    color: white
+}
+
+.formulario{
+    border: #000000 solid;
+    border-radius: 5px;
+    background: linear-gradient(#1A374D,#406882,#6998AB);
+    width: 350px;
+    height: 400px;
+    float: right;
+    margin-right: 150px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-family: 'Oswald';
+}
+
+.formulario1{
+    border: #000000 solid;
+    width: 350px;
+    height: 400px;
+    float: right;
+    margin-right: 150px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    text-align: center;
+    background: linear-gradient(#1A374D,#406882,#6998AB);
+    font-family: 'Oswald';
+}
+
+.formulario2{
+    border: #000000 solid;
+    width: 350px;
+    height: 400px;
+    float: left;
+    margin-right: 5px;
+    margin-left: 150px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    text-align: center;
+    background: linear-gradient(#1A374D,#406882,#6998AB);
+    font-family: 'Oswald';
+}
+
+.formulario_item1{
+    margin-top: 40px;
+    margin-left: 5px;
+}
+
+.formulario_item3{
+    margin-top: 10px;
+    box-sizing: border-box;
+}
+
+.numero_rastreo{
+    text-align: center;
+    padding-top: 0px;
+    padding-bottom: 20px;
+}
+
+.iconosayuda{
+    float: right;
+    margin-right: 20px;
+    margin: top 30px;
+}
+
+.horarios_de_atencion{
+    float: right;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    background-image: url(../img/inicio3.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.horario{
+    margin-left: 30px;
+    font-family: 'Oswald';
+    font-size: 40px;
+    padding-top: 150px;
+    background: #000000 solid 2px;
+    justify-content: left;
+}
+
+.formulariotarifa{
+    margin-left: 20px;
+    margin-top: 70px;
+}
+
+.titulodeformulario{
+    font-size: 20px;
+    font-family: 'Oswald';
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+
+.signupFrm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+.form {
+    background-color: white;
+    width: 400px;
+    border-radius: 8px;
+    padding: 20px 40px;
+    box-shadow: 0 10px 25px rgba(92, 99, 105, .2);
+}
+  
+.title {
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+
+.inputContainer {
+    position: relative;
+    height: 45px;
+    width: 90%;
+    margin-bottom: 17px;
+}
+
+.input {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    border: 1px solid #DADCE0;
+    border-radius: 7px;
+    font-size: 16px;
+    padding: 0 20px;
+    outline: none;
+    background: none;
+    z-index: 1;
+}
+  
+::placeholder {
+    color: transparent;
+}
+
+.label {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    padding: 0 4px;
+    background-color: white;
+    color: #DADCE0;
+    font-size: 16px;
+    transition: 0.5s;
+    z-index: 0;
+}
+
+.submitBtn {
+    display: block;
+    margin-left: auto;
+    padding: 15px 30px;
+    border: none;
+    background-color: #406882;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 30px;
+}
+  
+  .submitBtn:hover {
+    background-color: #0099ff;
+    transform: translateY(-2px);
+}
+
+.input:focus + .label {
+    top: -7px;
+    left: 3px;
+    z-index: 10;
+    font-size: 14px;
+    font-weight: 600;
+    color:#0099ff ;
+}
+
+.input:focus {
+    border: 2px solid #0099ff;
+}
+
+.input:not(:placeholder-shown)+ .label {
+    top: -7px;
+    left: 3px;
+    z-index: 10;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.title{
+    text-align: center ;
+}
+
+.container {  display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-auto-columns: 1fr;
+    gap: 3px 3px;
+    grid-auto-flow: row;
+    height: 500px;
+    width: 1000px;
+    padding-bottom: 1600px;
+  }
+  
+  .mision { grid-area: 1 / 1 / 2 / 2;
+    border: #000000 solid 1px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    
+}
+  
+  .vision { grid-area: 2 / 1 / 3 / 2;
+    border: #000000 solid 1px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+}
+  
+  .politica { grid-area: 3 / 1 / 4 / 2;
+    border: #000000 solid 1px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+}
+
+
+.clearfix{
+    float: none;
+    clear: both;
+}
+
+                             /*Footer*/
+ 
+footer{
+    padding: 1px;
+    background-color: #59C1BD;
+    background-size: cover; 
+    opacity: 90%; 
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 290px;
+    font-family: 'Oswald';
+}
+
+.container_footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.box_footer{
+    display: flex;
+    flex-direction: column;
+}
+
+.logo_footer{
+    background-color: #59C1BD;
+}
+
+.box_footer .logo_footer img{
+    width: 100px;
+    height: 70px;
+    padding-top: 10px;
+}
+
+.box_footer .terms{
+    max-width: 300px;
+    margin-top: 0px;
+    font-weight: 500;
+    color: #000000;
+    font-size: 18px;
+    text-align: justify;
+}
+
+.box_footer .terms:hover{
+    color: white;
+}
+
+.box_footer h2{
+    margin-bottom: 30px;
+    color: #010101;
+    font-weight: 700;
+}
+
+.box_footer a{
+    margin-top: 5px;
+    color: #000000;
+    font-weight: 600;
+}
+
+.box_footer a:hover{
+    opacity: 0.8;
+    color: white;
+}
+
+.box_footer a .fab{
+    font-size: 20px;
+}
+
+.box_copyright{
+    max-width: 1200px;
+    text-align: center;
+    padding: 0px 40px;
+}
+
+.box_copyright p{
+    margin-top: 1px;
+    color:#000000
+}
+
+.box_copyright hr{
+    border: none;
+    height: 1px;
+    background-color: #000000;
+}
+
+
